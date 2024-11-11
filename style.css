@@ -1,0 +1,36 @@
+#contenedor {
+    display: flex;
+    border: 5px dotted black;
+    padding: 20px;
+}
+
+.elemento {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+#e1 {
+    background-color: brown;
+}
+
+#e2 {
+    background-color: cadetblue;
+    border-radius: 100%;
+}
+
+#e2:hover{
+    background-color: rgb(13, 73, 75);
+}
+
+#e3 {
+    background-color: darkolivegreen;
+}
+
+#e4 {
+    background-color: rgb(107, 47, 104);
+}
