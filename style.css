@@ -62,7 +62,7 @@
 
 /* menú de navegación */
 nav {
-    background-color: aquamarine;
+    background: linear-gradient( 45deg, rgb(201, 114, 197), rgb(135, 217, 224));
     padding: 15px;
 }
 
@@ -85,10 +85,29 @@ nav ul li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav ul li:hover{
+   background-color: aquamarine;
+}
+
+
+
+
 nav ul li ul {
     
 }
 
 .submenu {
+    display: none;
+}
+
+.submenu li:hover{
+    background: linear-gradient( 45deg, rgb(201, 114, 197), rgb(135, 217, 224));
+}
+
+.submenu a{
+    text-decoration: none;
+}
+
+nav ul li:hover ul{
     display: block;
 }
