@@ -2,8 +2,7 @@
 //alert() muestra una ventana emergente
 alert("hola mundo");
 alert(1+9+41);
-alert("1+9+41");
-*/
+alert("1+9+41");*/
 
 /* comentario bloque */
 // comentario de línea
@@ -31,7 +30,8 @@ alert(8%2); //Resto de división
 
 let edad = 16;
 edad = 17;
-edad+1; //puedo sumar a la variable porque guarda un valor númerico
+edad = edad + 7; //puedo sumar a la variable porque guarda un valor númerico
+edad += 5;
 edad++; //suma uno
 edad--; //resta uno
 
@@ -44,9 +44,47 @@ let nombreUsuario = "Roxana";
 //alert(saludo);
 
 // constantes
-const SALUDO_USUARIO = "Hola de nuevo "+nombreUsuario; //"Hola de nuevo Roxana"
+const SALUDO_USUARIO = "Hola de nuevo " + nombreUsuario; //"Hola de nuevo Roxana"
 
 //no se puede cambiar el valor de las constantes
 //SALUDO_USUARIO = "Hola"; 
 
-alert(SALUDO_USUARIO);
+//alert(SALUDO_USUARIO);
+
+// Operadores lógicos;
+console.log(5 > 4); //mayor que
+console.log(5 < 8); //menor que
+
+console.log(5 >= 6); //mayor o igual que
+console.log(5 <= 7); //menor o igual que
+
+console.log(5 == 5); //igual que
+console.log(5 != 7); //no es igual
+
+console.log("a">"b"); 
+
+//Condicionales
+if (edad>=18) {
+    alert("Eres mayor de edad");
+} else{
+    alert("No eres mayor de edad");
+}
+
+let premium = true;
+
+if (premium) {
+    console.log("tienes cuenta premium"); //si es premium
+    alert("Bienvenido "+nombreUsuario)
+} else if(edad>=18){
+    console.log("puedes crear una cuenta"); //si no es premium, pero es +18
+} else{
+    console.log("no puedes crear una cuenta"); //si no es premium ni +18
+}
+
+//interactuar con html DOM
+//     recojo el elemento      // que hago //
+document.getElementById("texto").innerHTML = "Holaaaaaa "+nombreUsuario;
+document.getElementById("caja").innerHTML = "<p>Hola otra vez</p>";
+
+document.getElementsByClassName("articulo")
+
