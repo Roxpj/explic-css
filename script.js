@@ -15,6 +15,9 @@ let saludo = "Holaaa";
 let despedida;
 //rellenar variable
 despedida = "Adios";
+console.log(despedida); //"Adios"
+despedida = "adiosss";
+console.log(despedida); //"adioss"
 
 //igualar una variable a otra
 saludo = despedida;
@@ -58,33 +61,57 @@ console.log(5 < 8); //menor que
 console.log(5 >= 6); //mayor o igual que
 console.log(5 <= 7); //menor o igual que
 
-console.log(5 == 5); //igual que
+console.log(5 == "5"); //igual que
+console.log(5 === "5"); // estrictamente igual que (compara también si es el mismo tipo de dato)
 console.log(5 != 7); //no es igual
 
-console.log("a">"b"); 
+console.log("a" > "b");
+console.log("Cortazar" > "Navarro");
 
 //Condicionales
-if (edad>=18) {
+if (edad >= 18) {
     alert("Eres mayor de edad");
-} else{
+} else {
     alert("No eres mayor de edad");
 }
+
 
 let premium = true;
 
 if (premium) {
     console.log("tienes cuenta premium"); //si es premium
-    alert("Bienvenido "+nombreUsuario)
-} else if(edad>=18){
+    alert("Bienvenido " + nombreUsuario)
+} else if (edad >= 18) {
     console.log("puedes crear una cuenta"); //si no es premium, pero es +18
-} else{
+} else {
     console.log("no puedes crear una cuenta"); //si no es premium ni +18
 }
 
 //interactuar con html DOM
 //     recojo el elemento      // que hago //
-document.getElementById("texto").innerHTML = "Holaaaaaa "+nombreUsuario;
+document.getElementById("texto").innerHTML = "Holaaaaaa " + nombreUsuario;
 document.getElementById("caja").innerHTML = "<p>Hola otra vez</p>";
 
-document.getElementsByClassName("articulo")
+
+document.querySelector
+
+//Funciones
+function saludar() {
+    alert("Bienvenido");
+}
+
+function modoNoche() {
+    document.body.style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
+
+function modoDia() {
+    document.body.style.color = "black";
+    document.body.style.backgroundColor = "white";
+
+
+}
+
+
+
 
