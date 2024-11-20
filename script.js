@@ -58,6 +58,7 @@ const SALUDO_USUARIO = "Hola de nuevo " + nombreUsuario; //"Hola de nuevo Roxana
 console.log(5 > 4); //mayor que
 console.log(5 < 8); //menor que
 
+
 console.log(5 >= 6); //mayor o igual que
 console.log(5 <= 7); //menor o igual que
 
@@ -65,8 +66,12 @@ console.log(5 == "5"); //igual que
 console.log(5 === "5"); // estrictamente igual que (compara también si es el mismo tipo de dato)
 console.log(5 != 7); //no es igual
 
-console.log("a" > "b");
+//puedo comparar texto
+console.log("a" > "b"); //false
 console.log("Cortazar" > "Navarro");
+
+let buleano = 4 < 2; // el valor que devuelve es un boolean
+console.log(buleano);
 
 //Condicionales
 if (edad >= 18) {
@@ -87,13 +92,22 @@ if (premium) {
     console.log("no puedes crear una cuenta"); //si no es premium ni +18
 }
 
-//interactuar con html DOM
+//Interactuar con html DOM
+//Selectores
 //     recojo el elemento      // que hago //
 document.getElementById("texto").innerHTML = "Holaaaaaa " + nombreUsuario;
 document.getElementById("caja").innerHTML = "<p>Hola otra vez</p>";
+//document.getElementsByClassName
 
+//selecciona primer elemento
+document.body.querySelector("#texto").innerHTML = "Metiendo codigo en p";
 
-document.querySelector
+//Podemos guardar nuestra selección en una variable o const para reutilizarla
+let texto = document.getElementById("texto");
+let body = document.body;
+texto.innerHTML = "He guardado mi selector en una variable";
+texto.innerHTML = "he cambiado otra vez el texto";
+
 
 //Funciones
 function saludar() {
