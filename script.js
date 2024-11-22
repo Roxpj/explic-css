@@ -71,7 +71,7 @@ console.log("a" > "b"); //false
 console.log("Cortazar" > "Navarro");
 
 let buleano = 4 < 2; // el valor que devuelve es un boolean
-console.log(buleano);
+console.log(buleano); 
 
 //Condicionales
 if (edad >= 18) {
@@ -97,7 +97,7 @@ if (premium) {
 //     recojo el elemento      // que hago //
 document.getElementById("texto").innerHTML = "Holaaaaaa " + nombreUsuario;
 document.getElementById("caja").innerHTML = "<p>Hola otra vez</p>";
-//document.getElementsByClassName
+//document.getElementsByClassName("")
 
 //selecciona primer elemento
 document.body.querySelector("#texto").innerHTML = "Metiendo codigo en p";
@@ -106,8 +106,7 @@ document.body.querySelector("#texto").innerHTML = "Metiendo codigo en p";
 let texto = document.getElementById("texto");
 let body = document.body;
 texto.innerHTML = "He guardado mi selector en una variable";
-texto.innerHTML = "he cambiado otra vez el texto";
-
+texto.style.color = "blue";
 
 //Funciones
 function saludar() {
@@ -122,8 +121,6 @@ function modoNoche() {
 function modoDia() {
     document.body.style.color = "black";
     document.body.style.backgroundColor = "white";
-
-
 }
 
 
