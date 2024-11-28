@@ -92,6 +92,28 @@
 
         <div id="caja"></div>
 
+
+
+        <label for="nombre-usuario">Nombre de usuario:</label>
+        <input type="text" name="nombre-usuario" id="nombre-usuario">
+        <br>
+        <p>Indique su género:</p>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="checkbox" name="horoscopo">
+        <label for="horoscopo">quieres recibir notificaciones de tu horoscopo</label>
+
+
+        <br>
+        <button onclick="saludarUsuario()">Salúdame</button>
+
+        <h4>Lista de usuarios:</h4>
+        <ul id="contenedor-usuarios">
+        </ul>
+
         <article class="articulo">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima iure possimus maxime repellat dolore
                 facere,

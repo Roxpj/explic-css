@@ -75,9 +75,9 @@ console.log(buleano);
 
 //Condicionales
 if (edad >= 18) {
-    alert("Eres mayor de edad");
+    //alert("Eres mayor de edad");
 } else {
-    alert("No eres mayor de edad");
+    //alert("No eres mayor de edad");
 }
 
 
@@ -85,7 +85,7 @@ let premium = true;
 
 if (premium) {
     console.log("tienes cuenta premium"); //si es premium
-    alert("Bienvenido " + nombreUsuario)
+   // alert("Bienvenido " + nombreUsuario)
 } else if (edad >= 18) {
     console.log("puedes crear una cuenta"); //si no es premium, pero es +18
 } else {
@@ -123,6 +123,33 @@ function modoDia() {
     document.body.style.backgroundColor = "white";
 }
 
+function saludarUsuario(){
+    let inputUsuario = document.querySelector("#nombre-usuario").value
+    let generoFemenino = document.getElementById("femenino")
+    let generoMasculino = document.getElementById("masculino")
+
+    if(generoFemenino.checked){
+        alert("Bienvenida "+inputUsuario);
+    }else if(generoMasculino.checked){
+        alert("Bienvenido "+inputUsuario);
+    }else {
+        alert("Hola "+inputUsuario);
+    }
+
+    mostrarUsuario(inputUsuario);
+}
+
+function mostrarUsuario(inputUsuario){
+    const contenedorUsuarios = document.querySelector("#contenedor-usuarios")
+    const elementoUsuario = document.createElement("li")
+
+    ///Ejemplos de usar texto + datos js
+    //elementoUsuario.innerHTML = "hola "+inputUsuario;
+    //elementoUsuario.innerHTML = `hola ${inputUsuario} blablabla etc etc`;
+   
+    elementoUsuario.innerHTML = inputUsuario;
+    contenedorUsuarios.appendChild(elementoUsuario);
+}
 
 
 

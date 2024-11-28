@@ -1,0 +1,40 @@
+{
+"libros": [
+    {
+      "titulo": "Las que no duermen NASH",
+      "autor": "Dolores Redondo",
+      "genero": "Novela negra"
+    },
+    {
+      "titulo": "Victoria",
+      "autor": "Paloma Sánchez-Garnica",
+      "genero": "Novela histórica"
+    },
+    {
+      "titulo": "Carmen Mola",
+      "autor": "Carmen Mola",
+      "genero": "Novela negra"
+    },
+    {
+      "titulo": "Mi querida Lucía",
+      "autor": "La Vecina Rubia",
+      "genero": "Novela negra"
+    },
+    {
+      "titulo": "Fuego en la garganta",
+      "autor": "Beatriz Serrano",
+      "genero": "Novela contemporánea"
+    },
+    {
+      "titulo": "La saga de los longevos 1. La Vieja Familia",
+      "autor": "Eva García Sáenz de Urturi",
+      "genero": "Novela histórica"
+    },
+    {
+      "titulo": "La hora azul",
+      "autor": "Paula Hawkins",
+      "genero": "Novela negra"
+    }
+  ]
+
+}
